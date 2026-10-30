@@ -6,6 +6,8 @@ This project runs **UNet3D and UNETR on real BraTS-Africa MRI scans**, compares 
 
 [**Run / view on Kaggle**](https://www.kaggle.com/code/zekrock/brain-tumor-seg-brats-africa) · [**Teacher report**](project_report_teacher.pdf) · [**Technical reference**](project_reference.pdf) · [**Presentation notes**](presentation_notes.pdf) · [**Complete download**](https://github.com/ZekRock18/brain-tumor-segmentation/releases/latest)
 
+**New to the subject? Start with [Understand the whole project](understand_the_project.pdf)** — a concise ten-page illustrated guide from MRI and neural-network basics to UNet3D, UNETR attention, sliding-window inference, metrics, real results and viva answers. It uses actual project images and checkpoint-specific architecture diagrams.
+
 ## What I built
 
 This repository presents my project delivery: a self-contained Kaggle workflow, BraTS-Africa case discovery and modality mapping, pretrained checkpoint loading, full-volume evaluation, visual comparisons, animated slice sequences, and documented execution verification. The package also includes a detailed technical guide and a teacher-facing report.
@@ -84,6 +86,7 @@ The release includes both checkpoint binaries. They are omitted from Git history
 
 | Location | Contents |
 |---|---|
+| `understand_the_project.pdf` | Beginner-to-project learning guide: concepts, both algorithms, diagrams, examples and questions |
 | `project_report_teacher.pdf` | Illustrated submission report, methods, all four patient comparisons and full regional results |
 | `project_reference.pdf` | Technical explanations, diagrams, worked examples, limitations and rerun instructions |
 | `presentation_notes.pdf` | Speaking script, demonstration sequence and viva answers |

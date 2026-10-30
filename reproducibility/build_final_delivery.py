@@ -10,6 +10,8 @@ import hashlib
 import html
 import json
 import shutil
+import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -68,7 +70,7 @@ if not args.documents_only:
     repro.mkdir(exist_ok=True)
     for name in ['build_kaggle_notebook.py', 'validate_kaggle_notebook.py',
                  'validate_notebook_exports.py', 'verify_kaggle_results.py',
-                 'build_final_delivery.py']:
+                 'build_final_delivery.py', 'build_project_learning_guide.py']:
         shutil.copy2(HERE / name, repro / name)
     (repro / 'kaggle_kernel').mkdir(exist_ok=True)
     for name in ['brain-tumor-seg-brats-africa.ipynb', 'kernel-metadata.json']:
@@ -281,9 +283,9 @@ s = []
 page(s, 'Project reference')
 s += [p('Implementation, reproducibility and evidence guide', 'subtitle'), p(TEAM),
       p(f'Public project: <link href="{GITHUB}" color="#087f8c">{GITHUB}</link>', 'small')]
-section(s, 'Read this package in order', 'Start with START_HERE.html, then the teacher report. For a visual demonstration open results/report.html. For execution evidence open results/executed.ipynb. For a new Kaggle run use the clean notebook and metadata under notebooks/.')
+section(s, 'Read this package in order', 'Start with START_HERE.html. Read understand_the_project.pdf for a beginner-friendly explanation, then the teacher report. For a visual demonstration open results/report.html. For execution evidence open results/executed.ipynb. For a new Kaggle run use the clean notebook and metadata under notebooks/.')
 s.append(table(['Location', 'Contents and purpose'], [
-    ['Three root PDFs', 'Teacher report; this technical reference; presentation script and viva notes'],
+    ['Four root PDFs', 'Beginner learning guide; teacher report; this technical reference; presentation script and viva notes'],
     ['results/', 'Executed notebook, real metrics, all figures/GIFs, HTML report, logs and completion metadata'],
     ['notebooks/', 'Clean inference notebook and Kaggle kernel metadata'],
     ['weights/', 'Both original pretrained checkpoint binaries and provenance'],
@@ -425,6 +427,7 @@ buildinfo = {'built_at': datetime.now().isoformat(timespec='seconds'), 'kaggle_v
     'regeneration': 'From reproducibility: python build_final_delivery.py --documents-only'}
 (FINAL / 'BUILD_INFO.json').write_text(json.dumps(buildinfo, indent=2), encoding='utf-8')
 cards = ''.join(f'<a class="card" href="{path}"><strong>{title}</strong><span>{desc}</span></a>' for path, title, desc in [
+    ('understand_the_project.pdf', 'Understand the whole project', 'Ten illustrated pages: MRI basics, both algorithms, metrics, real results and viva answers'),
     ('project_report_teacher.pdf', 'Teacher report', 'Method, measured results, all four patient comparisons and sources'),
     ('project_reference.pdf', 'Technical reference', 'Preprocessing, models, metrics, rerun instructions and provenance'),
     ('presentation_notes.pdf', 'Presentation notes', 'Speaking script, demonstration sequence and viva answers'),
@@ -461,6 +464,9 @@ table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left
 <footer>Original model and checkpoint authors retain attribution and applicable rights. This delivery does not assign a new license to upstream artifacts. Animated GIFs traverse axial slices; they are not surface-rendered 3D reconstructions.</footer></main></html>'''
 (FINAL / 'START_HERE.html').write_text(index, encoding='utf-8')
 
+# Rebuild the learning guide before inventorying the complete delivery.
+subprocess.run([sys.executable, str(FINAL / 'reproducibility' / 'build_project_learning_guide.py')], check=True)
+
 def role(path):
     top = path.parts[0]
     return {'results': 'Verified version 6 execution output', 'notebooks': 'Clean Kaggle rerun source',
@@ -480,4 +486,4 @@ with (FINAL / 'MANIFEST_SHA256.csv').open('w', newline='', encoding='utf-8') as 
     for file in sorted(p for p in FINAL.rglob('*') if p.is_file() and p.name != 'MANIFEST_SHA256.csv'):
         writer.writerow([file.relative_to(FINAL).as_posix(), file.stat().st_size, digest(file)])
 print('Built final delivery:', FINAL)
-print('Files:', len(list(FINAL.rglob('*'))), '| PDFs: 3 | Real cases:', df.case_id.nunique())
+print('Files:', len(list(FINAL.rglob('*'))), '| PDFs:', len(list(FINAL.glob('*.pdf'))), '| Real cases:', df.case_id.nunique())

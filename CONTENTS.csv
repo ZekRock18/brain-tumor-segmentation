@@ -3,11 +3,12 @@ BUILD_INFO.json,1618,Final report / navigation / package record
 notebooks/brain-tumor-seg-brats-africa.ipynb,100976,Clean Kaggle rerun source
 notebooks/kernel-metadata.json,532,Clean Kaggle rerun source
 presentation_notes.pdf,80321,Final report / navigation / package record
-project_reference.pdf,486008,Final report / navigation / package record
+project_reference.pdf,486090,Final report / navigation / package record
 project_report_teacher.pdf,815793,Final report / navigation / package record
-README.md,9892,Final report / navigation / package record
-reproducibility/build_final_delivery.py,50752,Source and build/verification tooling
+README.md,10365,Final report / navigation / package record
+reproducibility/build_final_delivery.py,51290,Source and build/verification tooling
 reproducibility/build_kaggle_notebook.py,39127,Source and build/verification tooling
+reproducibility/build_project_learning_guide.py,29733,Source and build/verification tooling
 reproducibility/kaggle_kernel/brain-tumor-seg-brats-africa.ipynb,100976,Source and build/verification tooling
 reproducibility/kaggle_kernel/kernel-metadata.json,532,Source and build/verification tooling
 reproducibility/repo/.gitignore,768,Source and build/verification tooling
@@ -72,7 +73,8 @@ results/report.html,6478,Verified version 6 execution output
 results/run_metadata.json,946,Verified version 6 execution output
 results/selected_cases.csv,151,Verified version 6 execution output
 results/SUCCESS.json,767,Verified version 6 execution output
-START_HERE.html,5871,Final report / navigation / package record
+START_HERE.html,6073,Final report / navigation / package record
+understand_the_project.pdf,596693,Final report / navigation / package record
 weights/provenance.json,1120,Original pretrained checkpoint / provenance
 weights/unet3d_pytorch_model.bin,79993650,Original pretrained checkpoint / provenance
 weights/unetr_pytorch_model.bin,77358211,Original pretrained checkpoint / provenance
