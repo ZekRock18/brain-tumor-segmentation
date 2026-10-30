@@ -1,0 +1,5 @@
+# Preserve exact delivery bytes so checksums survive cloning.
+* -text
+*.pdf binary
+*.png binary
+*.gif binary

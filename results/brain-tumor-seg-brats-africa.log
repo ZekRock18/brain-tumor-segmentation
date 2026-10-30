@@ -1,0 +1,111 @@
+[{"stream_name":"stderr","time":7.293112046,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.293150975,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.293154901,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.293157354,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.88948368,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.889510796,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.889515334,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.88951914,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":20.745187204,"data":"Device: cuda | torch: 2.11.0+cu128 | cuda build: 12.8\n"}
+,{"stream_name":"stdout","time":20.745220341,"data":"GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":20.745224557,"data":"Input root: /kaggle/input\n"}
+,{"stream_name":"stdout","time":20.745228099,"data":"  attached: datasets -\u003e ['yakunokamizen', 'zekrock']\n"}
+,{"stream_name":"stdout","time":36.712082194,"data":"unet3d  \u003c- /kaggle/input/datasets/zekrock/brats-weights/unet3d_pytorch_model.bin  (80.0 MB)\n"}
+,{"stream_name":"stderr","time":38.482407277,"data":"INFO: UNet3D initialized: in=4, out=3, base_ch=60, groups=4\n"}
+,{"stream_name":"stderr","time":38.482454923,"data":"\n"}
+,{"stream_name":"stderr","time":38.482460428,"data":"INFO: UNet3D initialized: in=4, out=3, base_ch=60, groups=4\n"}
+,{"stream_name":"stdout","time":45.320036244,"data":"unetr   \u003c- /kaggle/input/datasets/zekrock/brats-weights/unetr_pytorch_model.bin  (77.4 MB)\n"}
+,{"stream_name":"stderr","time":48.644877396,"data":"INFO: UNETR initialized: embed_dim=384, layers=6, heads=8, patches=8^3=512, extraction_layers=[3, 6]\n"}
+,{"stream_name":"stderr","time":48.644943978,"data":"\n"}
+,{"stream_name":"stderr","time":48.644953631,"data":"INFO: UNETR initialized: embed_dim=384, layers=6, heads=8, patches=8^3=512, extraction_layers=[3, 6]\n"}
+,{"stream_name":"stdout","time":49.351878198,"data":"unet3d  params=19,992,603  val_dice=0.8694  epoch=419\n"}
+,{"stream_name":"stdout","time":49.351909142,"data":"unetr   params=19,327,907  val_dice=0.8362  epoch=469\n"}
+,{"stream_name":"stdout","time":51.516829134,"data":"Forward smoke test OK: (1,4,128,128,128) -\u003e (1,3,128,128,128)\n"}
+,{"stream_name":"stdout","time":51.92712866,"data":"Dataset root : /kaggle/input/datasets/yakunokamizen/brats-africa\n"}
+,{"stream_name":"stdout","time":51.927166392,"data":"Ground-truth segmentations found: 146\n"}
+,{"stream_name":"stdout","time":52.084973171,"data":"Cases with all 4 modalities + seg: 146\n"}
+,{"stream_name":"stdout","time":52.085004161,"data":"cohort\n"}
+,{"stream_name":"stdout","time":52.085009878,"data":"95_Glioma            95\n"}
+,{"stream_name":"stdout","time":52.085015014,"data":"51_OtherNeoplasms    51\n"}
+,{"stream_name":"stdout","time":52.08502238,"data":"\n"}
+,{"stream_name":"stdout","time":52.085026574,"data":"            case_id            cohort\n"}
+,{"stream_name":"stdout","time":52.085031112,"data":"BraTS-SSA-00009-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":52.085035554,"data":"BraTS-SSA-00018-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":52.085040338,"data":"BraTS-SSA-00040-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":52.085072755,"data":"BraTS-SSA-00045-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":52.085079635,"data":"BraTS-SSA-00062-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":57.799955193,"data":"Probe case   : BraTS-SSA-00009-000 (51_OtherNeoplasms)\n"}
+,{"stream_name":"stdout","time":57.800012723,"data":"image shape  : (4, 240, 240, 155)  dtype=float32\n"}
+,{"stream_name":"stdout","time":57.800017598,"data":"label shape  : (3, 240, 240, 155)\n"}
+,{"stream_name":"stdout","time":57.800021362,"data":"    raw labels -\u003e 0:8906744, 1:796, 3:20460\n"}
+,{"stream_name":"stdout","time":57.800025373,"data":"    supported labels: enhancing label 3 is mapped to 4; channels are ET, TC, WT\n"}
+,{"stream_name":"stdout","time":57.832515492,"data":"Warm-up complete. Inference backend: MONAI sliding window\n"}
+,{"stream_name":"stdout","time":57.893745892,"data":"Evaluating 4 cases\n"}
+,{"stream_name":"stdout","time":57.941339249,"data":"            case_id            cohort\n"}
+,{"stream_name":"stdout","time":57.941366562,"data":"BraTS-SSA-00047-000         95_Glioma\n"}
+,{"stream_name":"stdout","time":57.941372219,"data":"BraTS-SSA-00068-000         95_Glioma\n"}
+,{"stream_name":"stdout","time":57.941376367,"data":"BraTS-SSA-00111-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":57.941380882,"data":"BraTS-SSA-00170-000 51_OtherNeoplasms\n"}
+,{"stream_name":"stdout","time":57.941385024,"data":"[1/4] BraTS-SSA-00047-000  (95_Glioma)\n"}
+,{"stream_name":"stdout","time":63.775201659,"data":"    raw labels -\u003e 0:8905582, 1:2118, 2:10846, 3:9454\n"}
+,{"stream_name":"stdout","time":63.775228411,"data":"    supported labels: enhancing label 3 is mapped to 4; channels are ET, TC, WT\n"}
+,{"stream_name":"stdout","time":63.775233782,"data":"    loaded (4, 240, 240, 155) in 5.7s\n"}
+,{"stream_name":"stdout","time":130.457801774,"data":"    unet3d dice_mean=0.9105  (ET 0.8971 / TC 0.9381 / WT 0.8964)  52.5s\n"}
+,{"stream_name":"stdout","time":130.458705287,"data":"    unetr  dice_mean=0.8606  (ET 0.8561 / TC 0.9082 / WT 0.8174)  2.2s\n"}
+,{"stream_name":"stdout","time":130.653297201,"data":"[2/4] BraTS-SSA-00068-000  (95_Glioma)\n"}
+,{"stream_name":"stdout","time":136.886977993,"data":"    loaded (4, 240, 240, 155) in 6.2s\n"}
+,{"stream_name":"stdout","time":161.458125298,"data":"    unet3d dice_mean=0.7635  (ET 0.7023 / TC 0.6352 / WT 0.9529)  9.6s\n"}
+,{"stream_name":"stdout","time":161.458890306,"data":"    unetr  dice_mean=0.7797  (ET 0.7722 / TC 0.6393 / WT 0.9276)  2.2s\n"}
+,{"stream_name":"stdout","time":161.653731851,"data":"[3/4] BraTS-SSA-00111-000  (51_OtherNeoplasms)\n"}
+,{"stream_name":"stdout","time":167.074445843,"data":"    loaded (4, 240, 240, 155) in 5.4s\n"}
+,{"stream_name":"stdout","time":190.888870915,"data":"    unet3d dice_mean=0.8831  (ET 0.8782 / TC 0.9120 / WT 0.8592)  9.8s\n"}
+,{"stream_name":"stdout","time":190.889898943,"data":"    unetr  dice_mean=0.8465  (ET 0.8383 / TC 0.8693 / WT 0.8319)  2.2s\n"}
+,{"stream_name":"stdout","time":191.089666159,"data":"[4/4] BraTS-SSA-00170-000  (51_OtherNeoplasms)\n"}
+,{"stream_name":"stdout","time":196.687818784,"data":"    loaded (4, 240, 240, 155) in 5.6s\n"}
+,{"stream_name":"stdout","time":221.74354107,"data":"    unet3d dice_mean=0.8611  (ET 0.9668 / TC 0.6618 / WT 0.9548)  10.0s\n"}
+,{"stream_name":"stdout","time":221.745119314,"data":"    unetr  dice_mean=0.9381  (ET 0.9807 / TC 0.8953 / WT 0.9384)  2.2s\n"}
+,{"stream_name":"stdout","time":221.746009443,"data":"\n"}
+,{"stream_name":"stdout","time":221.746035304,"data":"Done.\n"}
+,{"stream_name":"stdout","time":221.808008883,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":221.808061246,"data":"PER-CASE RESULTS (Dice / HD95 per model)\n"}
+,{"stream_name":"stdout","time":221.808078161,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":221.808085441,"data":"            case_id            cohort  dice_mean_unet3d  dice_mean_unetr  hd95_mean_unet3d  hd95_mean_unetr\n"}
+,{"stream_name":"stdout","time":221.808089616,"data":"BraTS-SSA-00047-000         95_Glioma            0.9105           0.8606            1.9333           4.7936\n"}
+,{"stream_name":"stdout","time":221.808093182,"data":"BraTS-SSA-00068-000         95_Glioma            0.7635           0.7797            6.1960           7.3835\n"}
+,{"stream_name":"stdout","time":221.808096401,"data":"BraTS-SSA-00111-000 51_OtherNeoplasms            0.8831           0.8465            3.1328           3.6346\n"}
+,{"stream_name":"stdout","time":221.808099891,"data":"BraTS-SSA-00170-000 51_OtherNeoplasms            0.8611           0.9381           14.1753           6.7514\n"}
+,{"stream_name":"stdout","time":221.808103419,"data":"\n"}
+,{"stream_name":"stdout","time":221.808106679,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":221.80811017,"data":"MODEL COMPARISON — means over the evaluated cases\n"}
+,{"stream_name":"stdout","time":221.808114198,"data":"====================================================================================================\n"}
+,{"stream_name":"stdout","time":221.808120905,"data":"        dice_ET  dice_TC  dice_WT  dice_mean  hd95_ET  hd95_TC  hd95_WT  hd95_mean  inference_s\n"}
+,{"stream_name":"stdout","time":221.808123238,"data":"model                                                                                          \n"}
+,{"stream_name":"stdout","time":221.808125573,"data":"unet3d   0.8611   0.7868   0.9158     0.8546   5.6758  10.7677   2.6346     6.3594      20.4751\n"}
+,{"stream_name":"stdout","time":221.808127911,"data":"unetr    0.8618   0.8281   0.8788     0.8562   2.4415   8.6011   5.8798     5.6408       2.2121\n"}
+,{"stream_name":"stdout","time":221.825704665,"data":"\n"}
+,{"stream_name":"stdout","time":221.825728967,"data":"Saved: /kaggle/working/brats_africa_results.csv (per case x model)\n"}
+,{"stream_name":"stdout","time":221.825734328,"data":"Saved: /kaggle/working/brats_africa_summary.csv (model means)\n"}
+,{"stream_name":"stdout","time":222.597739064,"data":"figure saved: /kaggle/working/figures/BraTS-SSA-00047-000.png\n"}
+,{"stream_name":"stdout","time":225.337721701,"data":"figure saved: /kaggle/working/figures/BraTS-SSA-00068-000.png\n"}
+,{"stream_name":"stdout","time":228.094865895,"data":"figure saved: /kaggle/working/figures/BraTS-SSA-00111-000.png\n"}
+,{"stream_name":"stdout","time":230.743056741,"data":"figure saved: /kaggle/working/figures/BraTS-SSA-00170-000.png\n"}
+,{"stream_name":"stdout","time":233.803078398,"data":"END-TO-END COMPLETE: real-case metrics, images, animations and report verified.\n"}
+,{"stream_name":"stderr","time":239.595130601,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":239.595166987,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":239.768883278,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":239.76891048,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":240.491704578,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":240.696172631,"data":"[NbConvertApp] Writing 7681421 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":243.149324916,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":243.978513214,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":243.978563114,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.978907509,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.979164203,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.979385085,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.979617781,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.979803669,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.980073751,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.980271681,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.980475312,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":243.980702012,"data":"[NbConvertApp] Writing 624969 bytes to __results__.html\n"}
+]

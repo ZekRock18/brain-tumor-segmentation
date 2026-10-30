@@ -1,0 +1,80 @@
+path,bytes,role
+BUILD_INFO.json,1618,Final report / navigation / package record
+notebooks/brain-tumor-seg-brats-africa.ipynb,100976,Clean Kaggle rerun source
+notebooks/kernel-metadata.json,532,Clean Kaggle rerun source
+presentation_notes.pdf,80321,Final report / navigation / package record
+project_reference.pdf,486008,Final report / navigation / package record
+project_report_teacher.pdf,815793,Final report / navigation / package record
+README.md,9892,Final report / navigation / package record
+reproducibility/build_final_delivery.py,50752,Source and build/verification tooling
+reproducibility/build_kaggle_notebook.py,39127,Source and build/verification tooling
+reproducibility/kaggle_kernel/brain-tumor-seg-brats-africa.ipynb,100976,Source and build/verification tooling
+reproducibility/kaggle_kernel/kernel-metadata.json,532,Source and build/verification tooling
+reproducibility/repo/.gitignore,768,Source and build/verification tooling
+reproducibility/repo/.python-version,6,Source and build/verification tooling
+reproducibility/repo/__init__.py,0,Source and build/verification tooling
+reproducibility/repo/configs/base.yaml,1226,Source and build/verification tooling
+reproducibility/repo/configs/unet3d.yaml,499,Source and build/verification tooling
+reproducibility/repo/configs/unetr.yaml,665,Source and build/verification tooling
+reproducibility/repo/data/__init__.py,833,Source and build/verification tooling
+reproducibility/repo/data/augmentation.py,4735,Source and build/verification tooling
+reproducibility/repo/data/dataset.py,9098,Source and build/verification tooling
+reproducibility/repo/data/deduplication.py,7320,Source and build/verification tooling
+reproducibility/repo/data/preprocessing.py,5112,Source and build/verification tooling
+reproducibility/repo/data/splits.py,6415,Source and build/verification tooling
+reproducibility/repo/evaluation/__init__.py,310,Source and build/verification tooling
+reproducibility/repo/evaluation/evaluator.py,9516,Source and build/verification tooling
+reproducibility/repo/evaluation/report.py,4374,Source and build/verification tooling
+reproducibility/repo/main.py,40689,Source and build/verification tooling
+reproducibility/repo/models/__init__.py,491,Source and build/verification tooling
+reproducibility/repo/models/adapters.py,5108,Source and build/verification tooling
+reproducibility/repo/models/param_counter.py,4511,Source and build/verification tooling
+reproducibility/repo/models/unet3d.py,10109,Source and build/verification tooling
+reproducibility/repo/models/unetr.py,22128,Source and build/verification tooling
+reproducibility/repo/pyproject.toml,927,Source and build/verification tooling
+reproducibility/repo/README.md,17102,Source and build/verification tooling
+reproducibility/repo/scripts/benchmark.py,9421,Source and build/verification tooling
+reproducibility/repo/scripts/train_unet3d.py,10424,Source and build/verification tooling
+reproducibility/repo/scripts/train_unetr.py,10971,Source and build/verification tooling
+reproducibility/repo/scripts/verify_deduplicate.py,4483,Source and build/verification tooling
+reproducibility/repo/tests/test_forward_pass.py,6540,Source and build/verification tooling
+reproducibility/repo/tracking/__init__.py,128,Source and build/verification tooling
+reproducibility/repo/tracking/mlflow_logger.py,4666,Source and build/verification tooling
+reproducibility/repo/training/__init__.py,629,Source and build/verification tooling
+reproducibility/repo/training/early_stopping.py,3301,Source and build/verification tooling
+reproducibility/repo/training/losses.py,4024,Source and build/verification tooling
+reproducibility/repo/training/metrics.py,5482,Source and build/verification tooling
+reproducibility/repo/training/trainer.py,27230,Source and build/verification tooling
+reproducibility/repo/training/vram_profiler.py,4297,Source and build/verification tooling
+reproducibility/validate_kaggle_notebook.py,4480,Source and build/verification tooling
+reproducibility/validate_notebook_exports.py,2362,Source and build/verification tooling
+reproducibility/verify_kaggle_results.py,2925,Source and build/verification tooling
+results/brain-tumor-seg-brats-africa.log,12854,Verified version 6 execution output
+results/brats_africa_results.csv,1712,Verified version 6 execution output
+results/brats_africa_summary.csv,227,Verified version 6 execution output
+results/cohort_summary.csv,759,Verified version 6 execution output
+results/dice_comparison.png,32642,Verified version 6 execution output
+results/executed.ipynb,7681488,Verified version 6 execution output
+results/figures/BraTS-SSA-00047-000.gif,1290355,Verified version 6 execution output
+results/figures/BraTS-SSA-00047-000.png,93237,Verified version 6 execution output
+results/figures/BraTS-SSA-00047-000_modalities.png,191253,Verified version 6 execution output
+results/figures/BraTS-SSA-00068-000.gif,1062640,Verified version 6 execution output
+results/figures/BraTS-SSA-00068-000.png,77009,Verified version 6 execution output
+results/figures/BraTS-SSA-00068-000_modalities.png,130892,Verified version 6 execution output
+results/figures/BraTS-SSA-00111-000.gif,1189065,Verified version 6 execution output
+results/figures/BraTS-SSA-00111-000.png,75821,Verified version 6 execution output
+results/figures/BraTS-SSA-00111-000_modalities.png,148114,Verified version 6 execution output
+results/figures/BraTS-SSA-00170-000.gif,1224761,Verified version 6 execution output
+results/figures/BraTS-SSA-00170-000.png,83182,Verified version 6 execution output
+results/figures/BraTS-SSA-00170-000_modalities.png,159686,Verified version 6 execution output
+results/progress_results.csv,1705,Verified version 6 execution output
+results/report.html,6478,Verified version 6 execution output
+results/run_metadata.json,946,Verified version 6 execution output
+results/selected_cases.csv,151,Verified version 6 execution output
+results/SUCCESS.json,767,Verified version 6 execution output
+START_HERE.html,5871,Final report / navigation / package record
+weights/provenance.json,1120,Original pretrained checkpoint / provenance
+weights/unet3d_pytorch_model.bin,79993650,Original pretrained checkpoint / provenance
+weights/unetr_pytorch_model.bin,77358211,Original pretrained checkpoint / provenance
+CONTENTS.csv,,This inventory; self-size omitted
+MANIFEST_SHA256.csv,,SHA-256 file integrity manifest

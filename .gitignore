@@ -1,0 +1,10 @@
+# Checkpoints are distributed in the complete release, not Git history.
+weights/*.bin
+*.zip
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+kaggle.json
+access_token

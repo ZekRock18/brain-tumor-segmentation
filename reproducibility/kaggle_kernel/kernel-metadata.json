@@ -1,0 +1,19 @@
+{
+  "id": "zekrock/brain-tumor-seg-brats-africa",
+  "title": "brain-tumor-seg-brats-africa",
+  "code_file": "brain-tumor-seg-brats-africa.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_internet": true,
+  "docker_image_pinning_type": "latest",
+  "dataset_sources": [
+    "zekrock/brats-weights",
+    "yakunokamizen/brats-africa"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

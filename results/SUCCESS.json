@@ -1,0 +1,25 @@
+{
+  "cases": 4,
+  "model_case_evaluations": 8,
+  "artifacts": [
+    "brats_africa_results.csv",
+    "brats_africa_summary.csv",
+    "selected_cases.csv",
+    "cohort_summary.csv",
+    "run_metadata.json",
+    "report.html",
+    "dice_comparison.png",
+    "figures/BraTS-SSA-00047-000.png",
+    "figures/BraTS-SSA-00047-000.gif",
+    "figures/BraTS-SSA-00047-000_modalities.png",
+    "figures/BraTS-SSA-00068-000.png",
+    "figures/BraTS-SSA-00068-000.gif",
+    "figures/BraTS-SSA-00068-000_modalities.png",
+    "figures/BraTS-SSA-00111-000.png",
+    "figures/BraTS-SSA-00111-000.gif",
+    "figures/BraTS-SSA-00111-000_modalities.png",
+    "figures/BraTS-SSA-00170-000.png",
+    "figures/BraTS-SSA-00170-000.gif",
+    "figures/BraTS-SSA-00170-000_modalities.png"
+  ]
+}

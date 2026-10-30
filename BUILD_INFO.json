@@ -1,0 +1,36 @@
+{
+  "built_at": "2026-10-30T06:08:16",
+  "kaggle_version": 6,
+  "kaggle_url": "https://www.kaggle.com/code/zekrock/brain-tumor-seg-brats-africa",
+  "notebook_visibility": "public (confirmed by owner)",
+  "github_url": "https://github.com/ZekRock18/brain-tumor-segmentation",
+  "project_owner": "Prakhar Gupta (ZekRock18)",
+  "upstream_commit": "a76973db5d3c4a437146716bad1236ce400d3c96",
+  "cases": [
+    "BraTS-SSA-00047-000",
+    "BraTS-SSA-00068-000",
+    "BraTS-SSA-00111-000",
+    "BraTS-SSA-00170-000"
+  ],
+  "training": false,
+  "gpu": "Tesla T4",
+  "raw_mri_included": false,
+  "sources": {
+    "Our project on GitHub \u2014 Prakhar Gupta / ZekRock18": "https://github.com/ZekRock18/brain-tumor-segmentation",
+    "Public Kaggle notebook (packaged results: version 6)": "https://www.kaggle.com/code/zekrock/brain-tumor-seg-brats-africa",
+    "Original model repository": "https://github.com/MohanadMahran/Brain_Tumor_Benchmark",
+    "UNet3D checkpoint": "https://huggingface.co/MohanadKombar/brain-tumor-unet3d-brats",
+    "UNETR checkpoint": "https://huggingface.co/MohanadKombar/brain-tumor-unetr-brats",
+    "BraTS-Africa input dataset": "https://www.kaggle.com/datasets/yakunokamizen/brats-africa",
+    "Attached checkpoint dataset": "https://www.kaggle.com/datasets/zekrock/brats-weights"
+  },
+  "exclusions": [
+    "credentials",
+    "raw MRI inputs",
+    "old failed/synthetic runs",
+    "Git history and caches",
+    "upstream example GIFs",
+    "empty upstream outputs"
+  ],
+  "regeneration": "From reproducibility: python build_final_delivery.py --documents-only"
+}

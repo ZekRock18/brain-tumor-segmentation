@@ -1,0 +1,56 @@
+# Shared configuration for both models
+# All paths are relative to project root
+
+seed: 42
+
+# Data paths
+data:
+  brats2021_dir: "data/raw/brats2021"
+  brats2024_dir: "data/raw/brats2024"
+  upenn_gbm_dir: "data/raw/UPenn-GBM"
+  ssa_dir: "data/raw/brats_ssa"
+  manifests_dir: "outputs/logs"
+
+# Patch sizes
+patch_size: [128, 128, 128]
+eval_patch_size: [128, 128, 128]
+sliding_window_overlap: 0.25
+
+# Training
+effective_batch_size: 8
+physical_batch_size: 2
+val_batch_size: 1
+gradient_accumulation_steps: 4
+num_epochs: 500
+log_every_n_epochs: 10
+early_stopping_patience: 30
+
+# DataLoader
+num_workers: 8
+pin_memory: true
+persistent_workers: true
+
+# Hardware optimization
+mixed_precision: true
+gradient_checkpointing: true
+cudnn_benchmark: false   # False for reproducibility (deterministic mode)
+allow_tf32: true
+clip_grad: 1.0
+wall_time_limit_s: 82800
+
+# Regularization
+mixup_prob: 0.2
+mixup_alpha: 0.2
+label_smoothing: 0.1
+drop_path_rate: 0.1
+
+# Test-time augmentation
+tta_enabled: true
+tta_orientations: 8      # All combinations of flips along 3 axes
+
+# MLflow
+mlflow_tracking_uri: "outputs/mlruns"
+experiment_name: "BrainTumorTraining_1.0"
+
+# Output
+output_dir: "outputs"

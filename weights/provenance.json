@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "Our project on GitHub \u2014 Prakhar Gupta / ZekRock18": "https://github.com/ZekRock18/brain-tumor-segmentation",
+    "Public Kaggle notebook (packaged results: version 6)": "https://www.kaggle.com/code/zekrock/brain-tumor-seg-brats-africa",
+    "Original model repository": "https://github.com/MohanadMahran/Brain_Tumor_Benchmark",
+    "UNet3D checkpoint": "https://huggingface.co/MohanadKombar/brain-tumor-unet3d-brats",
+    "UNETR checkpoint": "https://huggingface.co/MohanadKombar/brain-tumor-unetr-brats",
+    "BraTS-Africa input dataset": "https://www.kaggle.com/datasets/yakunokamizen/brats-africa",
+    "Attached checkpoint dataset": "https://www.kaggle.com/datasets/zekrock/brats-weights"
+  },
+  "weights": {
+    "unet3d": {
+      "sha256": "6af7c6c0b81d1219e8729475408bec79d7e44d2018562f40be8f94e4c46ee685",
+      "parameters": 19992603
+    },
+    "unetr": {
+      "sha256": "0ed2e169b9c2501c6114d87dce5dcd4789eda28b0ace12699435d69aa4f9b32a",
+      "parameters": 19327907
+    }
+  },
+  "notice": "Original author artifacts; no new license assigned by this delivery."
+}
